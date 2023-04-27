@@ -1,0 +1,208 @@
+:root {
+  --roboto: 'Roboto', sans-serif;
+  --creteRound: 'Crete Round', sans-serif;
+  --poppins: 'Poppins', sans-serif;
+  --blackOlive: #3c3a39;
+  --eerieBlack: #1c1a19;
+  --safetyOrange: #ff6b00;
+  --oldLace: #fff5e1;
+  --white: #fff;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--poppins);
+  color: var(--white);
+  font-size: 1.6rem;
+}
+
+/* Global */
+.container {
+  max-width: 120rem;
+  width: 88%;
+  margin: 0 auto;
+}
+
+h2,
+h3 {
+  font-family: var(--roboto);
+  font-weight: bold;
+}
+
+h1 {
+  font-family: var(--creteRound);
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+li {
+  list-style-type: none;
+}
+
+/* Utility */
+.flex {
+  display: flex;
+}
+
+/* Header */
+.header {
+  background-color: var(--blackOlive);
+}
+
+.bar {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-email {
+  display: none;
+}
+
+.nav {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .icon-email {
+    padding-top: 1.6rem;
+    padding-bottom: 0.6rem;
+    padding-right: 0.5rem;
+    display: block;
+  }
+
+  .icon-nav {
+    padding-top: 0.5rem;
+    padding-right: 0.5rem;
+    display: none;
+  }
+
+  .nav {
+    align-items: center;
+    display: flex;
+  }
+
+  .nav a {
+    padding: 0 2rem;
+    font-size: 1.2rem;
+  }
+}
+
+.bar-button {
+  background-color: var(--blackOlive);
+  border: none;
+  padding: 0;
+}
+
+.bar-button:hover {
+  cursor: pointer;
+}
+
+.logo {
+  padding-left: 1rem;
+}
+
+/* Main */
+.main {
+  background-color: var(--eerieBlack);
+  background-image: url(../images/bg-img.png);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: bottom -5rem right 0;
+}
+
+.main-text h1 {
+  color: var(--safetyOrange);
+  font-size: 7.2rem;
+}
+
+.bellow-text {
+  color: var(--oldLace);
+  padding: 1rem 0;
+}
+
+.social {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.texts {
+  padding-top: 15%;
+  padding-bottom: 15%;
+}
+
+.texts p {
+  font-size: 1.6rem;
+  max-width: 50%;
+}
+
+@media (max-width: 767px) {
+  .texts p {
+    font-size: 1.6rem;
+    max-width: 100%;
+  }
+
+  .texts {
+    padding-bottom: 0%;
+  }
+
+  .main {
+    flex-direction: column-reverse;
+    justify-content: center;
+    padding-bottom: 50%;
+    padding-top: 10%;
+  }
+
+  .main-text h1 {
+    font-size: 5.6rem;
+  }
+
+  .social {
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 2rem;
+  }
+
+  .social li {
+    margin: 2rem 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .main {
+    background-image: url(../images/dbg-image.png);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: top 0% right 0%;
+  }
+
+  .social li {
+    margin: 1rem 2rem;
+  }
+}
