@@ -26,7 +26,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 PORTFOLIO <a name="about-project"></a>}
+# 📖 PORTFOLIO <a name="about-project"></a>
 
 **Portfolio** it's a webpage that shows you my professionalism and knowledge about coding.
 
