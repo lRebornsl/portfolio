@@ -1,6 +1,6 @@
 :root {
   --roboto: 'Roboto', sans-serif;
-  --creteRound: 'Crete Round', serif;
+  --creteRound: 'Crete Round', sans-serif;
   --poppins: 'Poppins', sans-serif;
   --blackOlive: #3c3a39;
   --eerieBlack: #1c1a19;
@@ -46,10 +46,11 @@ h3 {
 
 h1 {
   font-family: var(--creteRound);
+  font-weight: 400;
 }
 
 h2 {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 h3 {
@@ -59,6 +60,10 @@ h3 {
 a {
   text-decoration: none;
   color: var(--white);
+}
+
+li {
+  list-style-type: none;
 }
 
 /* Utility */
@@ -132,9 +137,9 @@ a {
   background-position: bottom -5rem right 0;
 }
 
-.main-text {
+.main-text h1 {
   color: var(--safetyOrange);
-  font-size: 2.4rem;
+  font-size: 7.2rem;
 }
 
 .bellow-text {
@@ -147,24 +152,19 @@ a {
   justify-content: center;
 }
 
-.social-img {
-  padding-top: 1rem;
-  padding-right: 1.5rem;
-}
-
 .texts {
   padding-top: 15%;
   padding-bottom: 15%;
 }
 
 .texts p {
-  font-size: 1.15rem;
+  font-size: 1.6rem;
   max-width: 50%;
 }
 
 @media (max-width: 767px) {
   .texts p {
-    font-size: 1.35rem;
+    font-size: 1.6rem;
     max-width: 100%;
   }
 
@@ -179,10 +179,18 @@ a {
     padding-top: 10%;
   }
 
+  .main-text h1 {
+    font-size: 5.6rem;
+  }
+
   .social {
     flex-direction: row;
     justify-content: flex-start;
     padding-left: 2rem;
+  }
+
+  .social li {
+    margin: 2rem 1rem;
   }
 }
 
@@ -192,5 +200,9 @@ a {
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: top 0% right 0%;
+  }
+
+  .social li {
+    margin: 1rem 2rem;
   }
 }
