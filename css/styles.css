@@ -114,6 +114,10 @@ a{
   padding: 0;
 }
 
+.bar-button:hover{
+  cursor: pointer;
+}
+
 .logo{
   padding-left: 1rem;
 }

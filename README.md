@@ -47,6 +47,7 @@
 ### Key Features <a name="key-features"></a>
 
 - **Show a welcome message on my page.**
+- **Web responsively**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
