@@ -267,14 +267,14 @@ li {
   font-family: var(--inter);
 }
 
-.desc-ul li{
+.desc-ul li {
   color: var(--maastrichtBlue);
   font-size: 1.5rem;
   margin-right: 1rem;
   padding: 1rem 1.2rem;
   border-style: solid;
   border-color: var(--coolGrey);
-  border-width: .1rem;
+  border-width: 0.1rem;
 }
 
 .desc-bt {
@@ -340,19 +340,15 @@ li {
   font-family: var(--inter);
 }
 
-.prj-ul li{
+.prj-ul li {
   color: var(--white);
   font-size: 1.5rem;
   margin-right: 1rem;
   padding: 1rem 1.2rem;
   border-style: solid;
   border-color: var(--coolGrey);
-  border-width: .1rem;
+  border-width: 0.1rem;
   background: rgba(255, 255, 255, 0.24);
-}
-
-.desc-bt {
-  margin-top: 2rem;
 }
 
 .h-prj {
@@ -370,7 +366,7 @@ li {
   }
 
   .title-img {
-    margin: 2rem .5rem 1rem .5rem;
+    margin: 2rem 0.5rem 1rem 0.5rem;
   }
 
   .works-desc {
