@@ -169,12 +169,15 @@ li {
 }
 
 .texts p {
-  font-size: 1.6rem;
+  font-family: var(--inter);
+  font-size: 2rem;
+  line-height: 3.2rem;
   max-width: 50%;
 }
 
 @media (max-width: 767px) {
   .texts p {
+    font-family: var(--poppins);
     font-size: 1.6rem;
     max-width: 100%;
   }
@@ -286,6 +289,11 @@ li {
   font-family: var(--inter);
   font-weight: 700;
   color: var(--white);
+  font-size: 1.7rem;
+}
+
+.bt-prj:hover {
+  cursor: pointer;
 }
 
 .projects {
@@ -408,5 +416,81 @@ li {
 
   .h-bt {
     display: block;
+  }
+}
+
+/* About */
+.about {
+  background-color: var(--eerieBlack);
+  background-image: url(../images/aboutbg.png);
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: bottom 93% right -3.5rem;
+}
+
+.about-cont {
+  padding: 10rem 0;
+}
+
+.about-title h1 {
+  color: var(--safetyOrange);
+  font-size: 7.2rem;
+}
+
+.about-desc {
+  width: 50%;
+  font-family: var(--inter);
+  font-size: 2rem;
+  line-height: 3.2rem;
+}
+
+.about-bt {
+  margin-top: 3.5rem;
+}
+
+.about-features {
+  justify-content: space-between;
+  padding: 10rem 0;
+}
+
+.about-ft {
+  font-family: var(--inter);
+  font-weight: 700;
+  font-size: 3.2rem;
+  padding-bottom: 1.5rem;
+}
+
+.about-ul li {
+  font-family: var(--inter);
+  font-weight: 400;
+  font-size: 2.2rem;
+  padding: 1.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .about {
+    background-image: url(../images/aboutmbg.png);
+    background-position: right 0% bottom 77%;
+  }
+
+  .about-desc {
+    width: 100%;
+    font-size: 1.6rem;
+  }
+
+  .about-cont {
+    padding-bottom: 22rem;
+  }
+
+  .about-features {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 5rem;
+  }
+
+  .about-list {
+    padding-bottom: 2rem;
   }
 }
