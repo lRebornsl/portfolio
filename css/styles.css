@@ -9,6 +9,7 @@
   --oldLace: #fff5e1;
   --maastrichtBlue: #091e42;
   --coolGrey: #a49a89;
+  --snow: #fbf8f7;
   --white: #fff;
 }
 
@@ -488,5 +489,154 @@ li {
 
   .about-list {
     padding-bottom: 2rem;
+  }
+}
+
+/* Form */
+.form-cont {
+  padding: 12rem 0;
+}
+
+.main-form {
+  width: 65%;
+  padding-left: 5rem;
+}
+
+.form-text {
+  width: 35%;
+}
+
+.form-text p {
+  font-family: var(--inter);
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4.4rem;
+  color: var(--maastrichtBlue);
+}
+
+.fields {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto 10rem;
+  gap: 1rem;
+}
+
+.dhfield {
+  display: none;
+}
+
+.field {
+  padding-bottom: 1rem;
+}
+
+.f-ta {
+  padding-bottom: 0;
+}
+
+.field textarea {
+  background-color: var(--snow);
+  font-family: var(--inter);
+  height: 100%;
+  resize: none;
+  padding-bottom: 0;
+}
+
+.field textarea::placeholder {
+  color: var(--eerieBlack);
+  font-style: italic;
+}
+
+.field:nth-child(4),
+.field:nth-child(5) {
+  grid-column: 1/3;
+}
+
+.field-input {
+  width: 100%;
+  border: none;
+  padding: 1.5rem;
+  font-family: var(--roboto);
+  font-size: 1.5rem;
+}
+
+.field-img {
+  font-size: 0;
+}
+
+.bt-form {
+  padding-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .form-cont {
+    flex-direction: column;
+    padding: 8rem 0;
+  }
+
+  .form-text {
+    width: 100%;
+    text-align: center;
+    padding: 0 0.2rem;
+  }
+
+  .form-text p {
+    font-size: 3.2rem;
+  }
+
+  .fields {
+    display: block;
+  }
+
+  .main-form {
+    width: 100%;
+    padding: 3.5rem 0 0 0;
+  }
+
+  .field {
+    padding: 1rem 0;
+  }
+
+  .hfield {
+    display: none;
+  }
+
+  .dhfield {
+    display: block;
+  }
+
+  .bt-form {
+    text-align: center;
+  }
+
+  .field textarea {
+    padding-bottom: 5rem;
+  }
+}
+
+/* Footer */
+.footer-img {
+  font-size: 0;
+}
+
+.footer-social {
+  justify-content: center;
+  padding: 2rem 0;
+}
+
+.footer-social li {
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .line-cont {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+
+  .footer-line {
+    width: 35%;
+    height: 0.6rem;
+    background-color: var(--eerieBlack);
+    border-radius: 1rem;
   }
 }

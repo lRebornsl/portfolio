@@ -47,8 +47,9 @@
 ### Key Features <a name="key-features"></a>
 
 - **Show a welcome message on my page.**
-- **Show projects that I'd worked**
-- **Important information about me**
+- **Show projects that I'd worked.**
+- **Important information about me.**
+- **Form to contact me.**
 - **Web responsively.**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -88,6 +89,14 @@ Example commands:
 - GitHub: [@lRebornsl](https://github.com/lRebornsl)
 - Twitter: [@RebornsDev](https://twitter.com/RebornsDev)
 - LinkedIn: [Anthony Vásquez](https://www.linkedin.com/in/avvm98/)
+
+👤 **Ruri Enciso**
+
+- GitHub: [@RuriEnciso](https://github.com/RuriEnciso)
+
+👤 **Erwin Amador**
+
+- GitHub: [@eamador1](https://github.com/eamador1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
