@@ -625,3 +625,19 @@ li {
 .footer-social li {
   padding: 0 1rem;
 }
+
+@media (max-width: 768px) {
+.line-cont {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.footer-line {
+  width: 40%;
+  height: 1rem;
+  background-color: #1c1a19;
+  border-radius: 1rem;
+  
+  
+}
+}
