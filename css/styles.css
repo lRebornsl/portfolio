@@ -511,7 +511,7 @@ li {
   font-size: 4rem;
   font-weight: 700;
   line-height: 4.4rem;
-  color: var(--maastrichtBlue)
+  color: var(--maastrichtBlue);
 }
 
 .fields {
@@ -575,7 +575,7 @@ li {
   .form-text {
     width: 100%;
     text-align: center;
-    padding: 0 .2rem;
+    padding: 0 0.2rem;
   }
 
   .form-text p {
@@ -627,17 +627,16 @@ li {
 }
 
 @media (max-width: 768px) {
-.line-cont {
-  display: flex;
-  justify-content: center;
-  padding-bottom: 1rem;
-}
-.footer-line {
-  width: 40%;
-  height: 1rem;
-  background-color: #1c1a19;
-  border-radius: 1rem;
-  
-  
-}
+  .line-cont {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+  }
+
+  .footer-line {
+    width: 35%;
+    height: 0.6rem;
+    background-color: var(--eerieBlack);
+    border-radius: 1rem;
+  }
 }

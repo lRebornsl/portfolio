@@ -45,11 +45,11 @@
 
   <section class="main flex">
     <ul class="social flex">
-      <li><a href="#"><img src="icons/ghicon.png" alt=""></a></li>
-      <li><a href="#"><img src="icons/lkicon.png" alt=""></a></li>
-      <li><a href="#"><img src="icons/peace-icon.png" alt=""></a></li>
-      <li><a href="#"><img src="icons/twicon.png" alt=""></a></li>
-      <li><a href="#"><img src="icons/micon.png" alt=""></a></li>
+      <li><a href="#"><img src="icons/ghicon.png" alt="Image"></a></li>
+      <li><a href="#"><img src="icons/lkicon.png" alt="Image"></a></li>
+      <li><a href="#"><img src="icons/peace-icon.png" alt="Image"></a></li>
+      <li><a href="#"><img src="icons/twicon.png" alt="Image"></a></li>
+      <li><a href="#"><img src="icons/micon.png" alt="Image"></a></li>
     </ul><!--social-->
     <div class="texts container">
       <div class="main-text">
@@ -272,38 +272,38 @@
       <div class="form-text">
         <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
       </div>
-      <form class="main-form">
+      <form action="https://formspree.io/f/xpzebdko" method="POST" class="main-form">
         <div class="fields grid">
           <div class="field hfield">
-            <input class="field-input" type="text" placeholder="First Name" id="first-name">
+            <input class="field-input" type="text" name="firstname" placeholder="First Name" disabled="disabled" maxlength="30" required>
             <div class="field-img">
               <img class="img-w" src="images/mbarform.png" alt="Image">
             </div>
           </div>
           <div class="field dhfield">
-            <input class="field-input" type="text" placeholder="Full Name" id="first-name">
+            <input class="field-input" type="text" name="fullname" placeholder="Full Name" maxlength="30" required>
             <div class="field-img">
               <img class="img-w" src="images/mbarform.png" alt="Image">
             </div>
           </div>
           <div class="field hfield">
-            <input class="field-input" type="text" placeholder="Last Name" id="last-name">
+            <input class="field-input" type="text" name="lastname" placeholder="Last Name" disabled="disabled" maxlength="30" required>
             <div class="field-img">
               <img class="img-w" src="images/mbarform.png" alt="Image">
             </div>
           </div>
           <div class="field">
-            <input class="field-input" type="email" placeholder="Email Adress" id="e-mail">
+            <input class="field-input" type="email" name="email" placeholder="Email Adress" required>
             <div class="field-img">
               <img class="img-w" src="images/bbarform.png" alt="Image">
             </div>
           </div>
           <div class="field f-ta">
-            <textarea class="field-input" placeholder="Write me something..." id="textarea"></textarea>
+            <textarea class="field-input" name="textarea" placeholder="Write me something..." id="textarea" maxlength="500" required></textarea>
           </div>
         </div><!--fields-->
         <div class="bt-form">
-          <input type="submit" value="Get in touch" class="bt-prj">
+          <input type="submit" name="button" value="Get in touch" class="bt-prj">
         </div>
       </form>
     </div>
@@ -323,8 +323,8 @@
       </ul><!--social-->
     </div>
     <div class="line-cont">
-    <hr class="footer-line"></hr>
-  </div>
+      <hr class="footer-line"></hr>
+    </div>
   </footer>
 </body>
 </html>
