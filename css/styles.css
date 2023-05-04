@@ -295,6 +295,8 @@ li {
 
 .bt-prj:hover {
   cursor: pointer;
+  background-color: var(--oldLace);
+  color: var(--safetyOrange);
 }
 
 .projects {
