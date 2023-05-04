@@ -515,13 +515,9 @@ li {
 }
 
 .fields {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: auto auto 10rem;
   gap: 1rem;
-}
-
-.dhfield {
-  display: none;
 }
 
 .field {
@@ -543,11 +539,6 @@ li {
 .field textarea::placeholder {
   color: var(--eerieBlack);
   font-style: italic;
-}
-
-.field:nth-child(4),
-.field:nth-child(5) {
-  grid-column: 1/3;
 }
 
 .field-input {
