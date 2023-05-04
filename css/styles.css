@@ -229,9 +229,11 @@ li {
   margin: 0 3rem;
 }
 
-.title h1 {
-  font-size: 4rem;
+.title h2 {
+  font-family: var(--creteRound);
+  font-weight: 400;
   color: var(--maastrichtBlue);
+  font-size: 4rem;
   width: 100%;
   white-space: nowrap;
 }
@@ -249,9 +251,11 @@ li {
   width: 50%;
 }
 
-.desc-title h1 {
-  font-size: 4rem;
+.desc-title h2 {
+  font-family: var(--creteRound);
+  font-weight: 400;
   color: var(--maastrichtBlue);
+  font-size: 4rem;
   white-space: nowrap;
 }
 
@@ -325,7 +329,9 @@ li {
   margin: 1.5rem 1.5rem;
 }
 
-.prj-title h1 {
+.prj-title h2 {
+  font-family: var(--creteRound);
+  font-weight: 400;
   font-size: 3.2rem;
   color: var(--white);
 }
@@ -382,7 +388,7 @@ li {
     width: 100%;
   }
 
-  .desc-title h1 {
+  .desc-title h2 {
     font-size: 3.6rem;
   }
 
@@ -431,7 +437,9 @@ li {
   padding: 10rem 0;
 }
 
-.about-title h1 {
+.about-title h2 {
+  font-family: var(--creteRound);
+  font-weight: 400;
   color: var(--safetyOrange);
   font-size: 7.2rem;
 }
