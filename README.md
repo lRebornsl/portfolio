@@ -64,7 +64,7 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
     <ul>
-        <li>Visual Studio Code Installed</li>
+        <li>Visual Studio Code Installed.</li>
     </ul>
 
 ### Setup
