@@ -106,6 +106,10 @@ Example commands:
 
 - GitHub: [@eamador1](https://github.com/eamador1)
 
+👤 **Andrés**
+
+- GitHub: [@Dachrono](https://github.com/Dachrono)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
