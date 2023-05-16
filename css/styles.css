@@ -97,8 +97,36 @@ li {
   display: none;
 }
 
-.nav {
+.bar-cont {
+  justify-content: space-between;
+}
+
+.hidden {
   display: none;
+}
+
+.nav a {
+  font-family: var(--inter);
+  font-weight: 700;
+  font-size: 3.2rem;
+  color: var(--oldLace);
+  margin-left: 1rem;
+}
+
+.nav hr {
+  width: 230%;
+  margin-top: 0.5rem;
+  border: 0.1rem solid var(--coolGrey);
+}
+
+.nav-item {
+  margin-bottom: 1.5rem;
+}
+
+.nav-bar {
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 4rem 0 50rem 0;
 }
 
 @media (min-width: 768px) {
@@ -124,6 +152,32 @@ li {
     padding: 0 2rem;
     font-size: 1.2rem;
   }
+
+  .nav hr {
+    display: none;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
+
+  .nav-bar {
+    flex-direction: row;
+    padding: 0;
+  }
+
+  .logo {
+    display: block;
+  }
+
+  .bar-cont {
+    display: block;
+  }
+}
+
+.bar-img {
+  content: url(/icons/xicon.png);
+  margin: 2rem 1rem;
 }
 
 .bar-button {

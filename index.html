@@ -21,29 +21,37 @@
 </head>
 <body>
   <header class="header">
-    <div class="container">
+    <div class="container bar-cont flex">
       <div class="bar flex">
-        <div class="logo">
+        <div id="logo" class="logo">
           <h2>lRebornsl</h2>
         </div><!--logo-->
-        <div class="nav flex">
-          <nav class="nav-bar">
-              <a href="#">Portfolio</a>
-              <a href="#">About</a>
-              <a href="#">Contact</a>
+        <div id="nav" class="aux nav hidden flex">
+          <nav class="nav-bar flex">
+            <div class="nav-item">
+              <a class="item-button" href="#main">Portfolio</a>
+              <hr>
+            </div>
+            <div class="nav-item">
+              <a class="item-button" href="#about">About</a>
+              <hr>
+            </div>
+            <div class="nav-item">
+              <a class="item-button" href="#contact">Contact</a>
+            </div>
           </nav>
           <div class="icon-email">
-            <button class="bar-button"><img src="icons/email-icon.png" alt="Image"></button>
+            <button class="bar-button" ><img src="icons/email-icon.png" alt="Image"></button>
           </div><!--icon-email-->
         </div> 
-        <div class="icon-nav">
-          <button class="bar-button"><img src="icons/nav-icon.png" alt="Image"></button>
-        </div><!--icon-nav-->
       </div><!--bar-->
+      <div class="icon-nav">
+        <button class="mobile-bar bar-button"><img id="bar-img" class="" src="icons/nav-icon.png" alt="Image"></button>
+      </div><!--icon-nav-->
     </div><!--container-->
   </header>
 
-  <section class="main flex">
+  <section id="main" class="main flex">
     <ul class="social flex">
       <li><a href="#"><img src="icons/ghicon.png" alt="Image"></a></li>
       <li><a href="#"><img src="icons/lkicon.png" alt="Image"></a></li>
@@ -219,7 +227,7 @@
     </div>
   </section>
 
-  <section class="about">
+  <section id="about" class="about">
     <div class="container">
       <div class="about-cont">
         <div class="about-title">
@@ -267,7 +275,7 @@
     </div>
   </section>
   
-  <section class="form">
+  <section id="contact" class="form">
     <div class="form-cont container flex">
       <div class="form-text">
         <p>I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</p>
@@ -314,5 +322,6 @@
       <hr class="footer-line"></hr>
     </div>
   </footer>
+  <script src="js/scripts.js"></script>
 </body>
 </html>

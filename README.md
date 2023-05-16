@@ -106,6 +106,19 @@ Example commands:
 
 - GitHub: [@eamador1](https://github.com/eamador1)
 
+👤 **Andrés**
+
+- GitHub: [@Dachrono](https://github.com/Dachrono)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>`
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **[Make pop ups to works section]**
+- [ ] **[Add new animations and transitions]**
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
