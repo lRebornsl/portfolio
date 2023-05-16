@@ -110,6 +110,17 @@ Example commands:
 
 - GitHub: [@Dachrono](https://github.com/Dachrono)
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p>`
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> Describe 1 - 3 features you will add to the project.
+
+- [ ] **[Make pop ups to works section]**
+- [ ] **[Add new animations and transitions]**
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
