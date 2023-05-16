@@ -175,6 +175,11 @@ li {
   }
 }
 
+.bar-img {
+  content: url(/icons/xicon.png);
+  margin: 2rem 1rem;
+}
+
 .bar-button {
   background-color: var(--blackOlive);
   border: none;
