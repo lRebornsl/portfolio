@@ -116,8 +116,6 @@ Example commands:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
 - [ ] **[Make pop ups to works section]**
 - [ ] **[Add new animations and transitions]**
 
