@@ -115,8 +115,8 @@ li {
 
 .nav hr {
   width: 230%;
-  margin-top: .5rem;
-  border: .1rem solid var(--coolGrey);
+  margin-top: 0.5rem;
+  border: 0.1rem solid var(--coolGrey);
 }
 
 .nav-item {
