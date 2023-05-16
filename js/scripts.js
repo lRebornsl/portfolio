@@ -16,7 +16,7 @@ btnNav.addEventListener('click', () => {
   }
 });
 
-btnItem.forEach(item => {
+btnItem.forEach((item) => {
   item.addEventListener('click', () => {
     barImg.classList.remove('bar-img');
     mobileNav.classList.add('hidden');
