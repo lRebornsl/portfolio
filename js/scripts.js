@@ -5,6 +5,7 @@ const btnItem = document.querySelectorAll('.item-button');
 const mobileNav = document.getElementById('nav');
 const logo = document.getElementById('logo');
 const barImg = document.getElementById('bar-img');
+const body = document.querySelector('body');
 
 /* Creating data store */
 const prjData = [
@@ -107,8 +108,7 @@ for (let i = 0; i < prjData.length; i += 1) { /* Creating project cards using th
   btnPopup.addEventListener('click', () => { /* Creating pop-up click event per button while the cards are created to get the data store */
     const newElements = document.createElement('div');
     newElements.setAttribute('id', 'pop-up');
-    newElements.classList.add('pop-up');
-    newElements.classList.add('container');
+    newElements.classList.add('pop-up', 'container');
     newElements.innerHTML = `
     <div class="container">
       <div class="pu-title flex">
@@ -131,7 +131,7 @@ for (let i = 0; i < prjData.length; i += 1) { /* Creating project cards using th
           <img class="img-w" src="images/popup-img.png" alt="Image">
         </div>
         <div class="pu-desc">
-          <div class="description">
+          <div class="description pu-description">
             <p>${prjData[i].description}</p>
           </div>
           <div class="pu-buttons flex">
@@ -148,10 +148,15 @@ for (let i = 0; i < prjData.length; i += 1) { /* Creating project cards using th
     `;
     works.appendChild(newElements);
 
+    const blur = document.createElement('div');
+    blur.classList.add('blur');
+    body.appendChild(blur);
+
     const btnClose = document.querySelector('.bt-puclose');
     const popUp = document.getElementById('pop-up');
     btnClose.addEventListener('click', () => { /* Creating remove event to the pop-up */
       popUp.remove();
+      blur.remove();
     });
   });
 }
