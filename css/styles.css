@@ -422,11 +422,11 @@ li {
   .prj:hover .h-bt {
     display: block;
   }
-  
+
   .prj:hover .prj-desc {
     display: none;
   }
-  
+
   .prj:hover img {
     content: url(/images/prj_1.png);
   }
@@ -791,7 +791,7 @@ li {
   }
 
   .pu-list {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     margin-bottom: 4rem;
   }
 }

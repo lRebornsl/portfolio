@@ -7,14 +7,14 @@ const logo = document.getElementById('logo');
 const barImg = document.getElementById('bar-img');
 
 /* Creating data store */
-let prjData = [
+const prjData = [
   {
     name: 'Profesional Art Printing Data More',
     description: 'A daily selection of privately personalized reads; no accounts or sign-ups required. Has been the industry´s standard.',
     image: 'images/prj_4.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     live: '#',
-    source: '#'
+    source: '#',
   },
   {
     name: 'Data Dashboard Healthcare',
@@ -22,7 +22,7 @@ let prjData = [
     image: 'images/prj_2.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     live: '#',
-    source: '#'
+    source: '#',
   },
   {
     name: 'Website Portfolio',
@@ -30,7 +30,7 @@ let prjData = [
     image: 'images/prj_3.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     live: '#',
-    source: '#'
+    source: '#',
   },
   {
     name: 'Profesional Art Printing Data More',
@@ -38,7 +38,7 @@ let prjData = [
     image: 'images/prj_4.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     live: '#',
-    source: '#'
+    source: '#',
   },
   {
     name: 'Data Dashboard Healthcare',
@@ -46,7 +46,7 @@ let prjData = [
     image: 'images/prj_2.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     live: '#',
-    source: '#'
+    source: '#',
   },
   {
     name: 'Website Portfolio',
@@ -54,8 +54,8 @@ let prjData = [
     image: 'images/prj_3.png',
     technologies: ['HTML', 'Bootstrap', 'Ruby'],
     live: '#',
-    source: '#'
-  }
+    source: '#',
+  },
 ];
 
 btnNav.addEventListener('click', () => {
@@ -79,7 +79,7 @@ btnItem.forEach((item) => {
 });
 
 /* Projects */
-for (let i = 0; i < prjData.length; i++) { /* Creating project cards using the data store */
+for (let i = 0; i < prjData.length; i += 1) { /* Creating project cards using the data store */
   const elements = document.createElement('div');
   elements.classList.add('prj');
   elements.innerHTML = `
@@ -104,10 +104,9 @@ for (let i = 0; i < prjData.length; i++) { /* Creating project cards using the d
   projects.appendChild(elements);
 
   const btnPopup = elements.querySelector('.bt-pu');
-  console.log(btnPopup);
   btnPopup.addEventListener('click', () => { /* Creating pop-up click event per button while the cards are created to get the data store */
     const newElements = document.createElement('div');
-    newElements.setAttribute('id','pop-up');
+    newElements.setAttribute('id', 'pop-up');
     newElements.classList.add('pop-up');
     newElements.classList.add('container');
     newElements.innerHTML = `
