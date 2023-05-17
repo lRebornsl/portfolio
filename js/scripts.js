@@ -1,6 +1,7 @@
 const btnNav = document.querySelector('.mobile-bar');
 const projects = document.querySelector('.projects');
 const works = document.querySelector('.works');
+const contact = document.querySelector('.main-form')
 const btnItem = document.querySelectorAll('.item-button');
 const mobileNav = document.getElementById('nav');
 const logo = document.getElementById('logo');
@@ -159,4 +160,33 @@ for (let i = 0; i < prjData.length; i += 1) { /* Creating project cards using th
       blur.remove();
     });
   });
+}
+
+const formData = {
+  email: ''
+}
+
+const email = document.querySelector('#email');
+email.addEventListener('change', (e) => {
+  formData[e.target.id] = e.target.value;
+});
+
+contact.addEventListener('submit', (e) => {
+  e.preventDefault();
+
+  const {email} = formData;
+  if(lcValidation(email)) {
+    contact.submit();
+    return;
+  }
+  const alert = document.createElement('p');
+  alert.classList.add('alert');
+  alert.textContent = 'Only use lowercase for the email';
+  contact.appendChild(alert);
+  setTimeout(() => alert.remove(), 2000)
+})
+
+function lcValidation(val) {
+  let re = /^[a-z0-9@._-]+$/g;
+  return re.test(val);
 }

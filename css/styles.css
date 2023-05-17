@@ -634,6 +634,12 @@ li {
   padding-top: 2rem;
 }
 
+.alert {
+  color: var(--maastrichtBlue);
+  text-align: center;
+  margin-top: 1rem;
+}
+
 @media (max-width: 768px) {
   .form-cont {
     flex-direction: column;
