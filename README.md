@@ -116,7 +116,6 @@ Example commands:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Create validations for contact section]**
 - [ ] **[Add new animations and transitions]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
