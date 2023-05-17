@@ -106,7 +106,7 @@ Example commands:
 
 - GitHub: [@eamador1](https://github.com/eamador1)
 
-👤 **Andrés**
+👤 **Andrés Zamorano M**
 
 - GitHub: [@Dachrono](https://github.com/Dachrono)
 
@@ -116,7 +116,7 @@ Example commands:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Make pop ups to works section]**
+- [ ] **[Create validations for contact section]**
 - [ ] **[Add new animations and transitions]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
