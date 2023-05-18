@@ -163,12 +163,32 @@ for (let i = 0; i < prjData.length; i += 1) { /* Creating project cards using th
 }
 
 const formData = {
+  fullname: '',
   email: '',
+  textarea: ''
 };
 
+function getText(val) {
+  formData[val.target.id] = val.target.value;
+}
+
+const fullname = document.querySelector('#fullname');
 const email = document.querySelector('#email');
-email.addEventListener('change', (e) => {
-  formData[e.target.id] = e.target.value;
+const textarea = document.querySelector('#textarea');
+
+fullname.addEventListener('input', getText);
+email.addEventListener('input', getText);
+textarea.addEventListener('input', getText);
+
+fullname.value = localStorage.getItem('fullname');
+email.value = localStorage.getItem('email');
+textarea.value = localStorage.getItem('textarea');
+
+contact.addEventListener('input', () => {
+  const {fullname, email, textarea} = formData;
+  localStorage.setItem('fullname',fullname);
+  localStorage.setItem('email',email);
+  localStorage.setItem('textarea',textarea);
 });
 
 function lcValidation(val) {
