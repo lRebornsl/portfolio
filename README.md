@@ -106,17 +106,18 @@ Example commands:
 
 - GitHub: [@eamador1](https://github.com/eamador1)
 
-👤 **Andrés Zamorano M**
+👤 **Andrés Zamorano**
 
 - GitHub: [@Dachrono](https://github.com/Dachrono)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>`
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Add new animations and transitions]**
+- [ ] **[Add new animations]**
+- [ ] **[Add new transitions]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
