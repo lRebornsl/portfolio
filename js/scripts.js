@@ -165,7 +165,7 @@ for (let i = 0; i < prjData.length; i += 1) { /* Creating project cards using th
 const formData = {
   fullname: '',
   email: '',
-  textarea: ''
+  textarea: '',
 };
 
 function getText(val) {
@@ -185,10 +185,10 @@ email.value = localStorage.getItem('email');
 textarea.value = localStorage.getItem('textarea');
 
 contact.addEventListener('input', () => {
-  const {fullname, email, textarea} = formData;
-  localStorage.setItem('fullname',fullname);
-  localStorage.setItem('email',email);
-  localStorage.setItem('textarea',textarea);
+  const { fullname, email, textarea } = formData;
+  localStorage.setItem('fullname', fullname);
+  localStorage.setItem('email', email);
+  localStorage.setItem('textarea', textarea);
 });
 
 function lcValidation(val) {
