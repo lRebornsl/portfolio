@@ -169,7 +169,7 @@ const storedData = JSON.parse(localStorage.getItem('formData')) || {
 };
 
 const formData = {
-  ...storedData
+  ...storedData,
 };
 
 function getText(val) {
