@@ -162,34 +162,32 @@ for (let i = 0; i < prjData.length; i += 1) { /* Creating project cards using th
   });
 }
 
-const formData = {
+const storedData = JSON.parse(localStorage.getItem('formData')) || {
   fullname: '',
   email: '',
   textarea: '',
 };
 
+const formData = {
+  ...storedData
+};
+
 function getText(val) {
   formData[val.target.id] = val.target.value;
+  localStorage.setItem('formData', JSON.stringify(formData));
 }
 
 const fullname = document.querySelector('#fullname');
 const email = document.querySelector('#email');
 const textarea = document.querySelector('#textarea');
 
+fullname.value = formData.fullname;
+email.value = formData.email;
+textarea.value = formData.textarea;
+
 fullname.addEventListener('input', getText);
 email.addEventListener('input', getText);
 textarea.addEventListener('input', getText);
-
-fullname.value = localStorage.getItem('fullname');
-email.value = localStorage.getItem('email');
-textarea.value = localStorage.getItem('textarea');
-
-contact.addEventListener('input', () => {
-  const { fullname, email, textarea } = formData;
-  localStorage.setItem('fullname', fullname);
-  localStorage.setItem('email', email);
-  localStorage.setItem('textarea', textarea);
-});
 
 function lcValidation(val) {
   const re = /^[a-z0-9@._-]+$/g;
